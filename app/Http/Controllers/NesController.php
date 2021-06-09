@@ -9,7 +9,7 @@ class NesController extends Controller
         $aFile = [];
         if ($handle = opendir(public_path('/game'))) {
             while (false !== ($entry = readdir($handle))) {
-                if ($entry != "." && $entry != "..") {
+                if ($entry != "." && $entry != ".." && $entry != ".gitignore") {
                     $aFile[] = $entry;
                 }
             }

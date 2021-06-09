@@ -3,8 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{ $url }}</title>
-    <script type="text/javascript" src="{{asset('/nes')}}/jsnes.min.js"></script>
-    <script type="text/javascript" src="{{asset('/nes')}}/nes-embed2.js"></script>
+    <script type="text/javascript" src="{{asset('/assets/nes')}}/jsnes.min.js"></script>
+    <script type="text/javascript" src="{{asset('/assets/nes')}}/nes-embed2.js"></script>
     <script>
         window.onload = function () {
             nes_load_url("nes-canvas", "{{ $url }}");
